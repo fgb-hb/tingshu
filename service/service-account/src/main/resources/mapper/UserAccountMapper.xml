@@ -11,6 +11,10 @@
 	<sql id="columns">
 		id,user_id,total_amount,lock_amount,available_amount,total_income_amount,total_pay_amount,create_time,update_time,is_deleted
 	</sql>
+	<select id="checkDeduction" resultType="com.atguigu.tingshu.model.account.UserAccount">
+		SELECT * FROM user_account WHERE user_id=#{userId} and available_amount
+			>#{amount} FOR UPDATE;
+	</select>
 
 </mapper>
 

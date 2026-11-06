@@ -78,4 +78,5 @@ public class TrackInfo extends BaseEntity {
 	@Schema(description = "发起审核任务ID")
 	@TableField("review_task_id")
 	private String reviewTaskId;
+
 }

@@ -12,6 +12,8 @@ public class AuthContextHolder {
     }
 
     public static Long getUserId() {
+        //先硬编码，后续再从token中获取用户id
+//        return 1L;
         return userId.get();
     }
 

@@ -68,7 +68,6 @@ public class SignHelper {
         log.info("加密后：" + md5Str);
         return md5Str;
     }
-
     /**
      * 获取时间戳
      * @return

@@ -23,7 +23,9 @@ public class SystemConstant {
 
     //声音状态 0501-审核通过 0502"-审核不通过
     public static final String  TRACK_STATUS_PASS="0501";  // 审核通过
-    public static final String  TRACK_STATUS_NO_PASS="0502";  // 审核不通过
+    public static final String  TRACK_STATUS_NO_PASS="0502";// 审核不通过
+    public static final String TRACK_STATUS_MANUAL = "0503";// 人工审核
+    public static final String TRACK_STATUS_REVIEWING = "0504";//  审核中
 
     //声音来源 0601-用户原创 0602-上传
     public static final String  TRACK_SOURCE_USER="0601";  // 用户原创
@@ -71,4 +73,5 @@ public class SystemConstant {
     //订单减免类型 1405-专辑折扣 1406-VIP服务折
     public static final String  ORDER_DERATE_ALBUM_DISCOUNT="1405";  // 专辑折扣
     public static final String  ORDER_DERATE_VIP_SERVICE_DISCOUNT="1406";  // VIP服务折扣
+
 }

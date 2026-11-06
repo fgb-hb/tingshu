@@ -13,8 +13,8 @@ public class TrackMediaInfoVo {
 	@Schema(description = "声音时长，单位秒")
 	private Float duration;
 
-	@Schema(description = "声音播放地址")
-	private String mediaUrl;
+//	@Schema(description = "声音播放地址")
+//	private String mediaUrl;
 
 	@Schema(description = "声音媒体类型")
 	private String type;

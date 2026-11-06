@@ -8,6 +8,9 @@ import java.io.File;
 
 
 public class UploadFileUtil {
+    public static void main(String[] args) {
+
+    }
 
     /**
      * 文件上传到临时路径

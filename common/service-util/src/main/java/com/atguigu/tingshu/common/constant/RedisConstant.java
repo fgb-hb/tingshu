@@ -27,7 +27,6 @@ public class RedisConstant {
     //订单流水号有效期
     public static final int ORDER_TRADE_EXPIRE = 5;
 
-
     //单位：秒
     //单位：秒 尝试获取锁的最大等待时间
     public static final long CACHE_LOCK_EXPIRE_PX1 = 1;

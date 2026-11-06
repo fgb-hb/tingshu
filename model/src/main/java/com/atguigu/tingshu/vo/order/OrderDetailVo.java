@@ -16,11 +16,11 @@ public class OrderDetailVo {
 	@Schema(description = "付费项目id")
 	private Long itemId;
 
-	@NotEmpty(message = "付费项目id不能为空")
+	@NotEmpty(message = "付费项目名称不能为空")
 	@Schema(description = "付费项目名称")
 	private String itemName;
 
-	@NotEmpty(message = "付费项目id不能为空")
+	@NotEmpty(message = "付费项目图片url不能为空")
 	@Schema(description = "付费项目图片url")
 	private String itemUrl;
 

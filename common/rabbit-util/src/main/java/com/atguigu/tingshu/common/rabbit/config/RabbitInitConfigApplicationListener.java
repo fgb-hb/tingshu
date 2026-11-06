@@ -107,7 +107,6 @@ public class RabbitInitConfigApplicationListener implements ApplicationListener<
     private void retrySendMsg(CorrelationData correlationData) {
         //获取相关数据
         GuiguCorrelationData gmallCorrelationData = (GuiguCorrelationData) correlationData;
-
         //获取redis中存放重试次数
         //先重发，在写会到redis中次数
         int retryCount = gmallCorrelationData.getRetryCount();

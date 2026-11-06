@@ -20,6 +20,7 @@
         <module>service-order</module>
         <module>service-payment</module>
         <module>service-user</module>
+        <module>service-cdc</module>
     </modules>
 
     <dependencies>
@@ -27,6 +28,11 @@
             <groupId>com.atguigu.tingshu</groupId>
             <artifactId>service-util</artifactId>
             <version>1.0</version>
+        </dependency>
+        <!-- redisson -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.atguigu.tingshu</groupId>

@@ -27,6 +27,7 @@ public class RabbitService {
      * @param routingKey 路由键
      * @param message    消息
      */
+
     public boolean sendMessage(String exchange, String routingKey, Object message) {
         //1.创建自定义相关消息对象-包含业务数据本身，交换器名称，路由键，队列类型，延迟时间,重试次数
         GuiguCorrelationData correlationData = new GuiguCorrelationData();
@@ -38,7 +39,10 @@ public class RabbitService {
         //2.将相关消息存入Redis  Key：UUID  相关消息对象  10 分钟
         redisTemplate.opsForValue().set(uuid, JSON.toJSONString(correlationData), 10, TimeUnit.MINUTES);
         //3.将相关消息封装到发送消息方法中
-        rabbitTemplate.convertAndSend(exchange, routingKey, message, correlationData);
+        rabbitTemplate.convertAndSend(exchange, routingKey, message,message1 ->{
+            message1.getMessageProperties().setHeader("retryCount", 0);
+            return message1;
+        }, correlationData);
         return true;
     }
 

@@ -21,4 +21,5 @@ public class BaseAttributeValue extends BaseEntity {
 	@TableField("value_name")
 	private String valueName;
 
+
 }

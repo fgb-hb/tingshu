@@ -23,6 +23,23 @@
             <artifactId>rabbit-util</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <!--seata-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+            <!-- 默认seata客户端版本比较低，排除后重新引入指定版本-->
+            <exclusions>
+                <exclusion>
+                    <groupId>io.seata</groupId>
+                    <artifactId>seata-spring-boot-starter</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-spring-boot-starter</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

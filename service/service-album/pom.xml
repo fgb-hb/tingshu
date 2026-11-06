@@ -19,6 +19,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <version>3.1.1014</version>
+        </dependency>
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java-tms</artifactId>
+            <version>3.1.1010</version>
+        </dependency>
+        <!-- 腾讯云vod_api -->
+        <dependency>
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
         </dependency>
@@ -45,6 +56,19 @@
             <groupId>com.atguigu.tingshu</groupId>
             <artifactId>rabbit-util</artifactId>
             <version>1.0</version>
+        </dependency>
+        <!-- 小程序SDK核心包 4.5.0 存在 -->
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>weixin-java-miniapp</artifactId>
+            <version>4.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.atguigu.tingshu</groupId>
+            <artifactId>service-search-client</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
